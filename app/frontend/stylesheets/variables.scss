@@ -1,0 +1,23 @@
+/* SCSS HEX */
+$baby-blue: #6cd4ffff;
+$black-coral: #495867ff;
+$lavender-blush: #eee5e9ff;
+$yellow-green: #8ac926ff;
+$persian-plum: #6f1d1bff;
+
+
+$primary: $baby-blue;
+$secondary: $black-coral;
+
+$tertiary: $lavender-blush;
+$good: $yellow-green;
+$bad: $persian-plum;
+
+// Add more colors to theme-colors:
+$custom-colors: (
+    "tertiary": $tertiary,
+    "good": $good,
+    "bad": $bad,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
