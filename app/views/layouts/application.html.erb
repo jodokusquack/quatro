@@ -14,5 +14,6 @@
     <%= render 'layouts/header.html.erb' %>
     <%= yield %>
     <%= render 'layouts/footer.html.erb' %>
+    <%= javascript_pack_tag 'custom', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>
