@@ -7,4 +7,8 @@ module ApplicationHelper
       "#{page_title} | #{base_title}"
     end
   end
+
+  def default_username(user)
+    user.email.split('@')[0].capitalize
+  end
 end
