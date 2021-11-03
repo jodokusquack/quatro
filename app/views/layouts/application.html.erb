@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <%= render 'layouts/header.html.erb' %>
+        <%= render 'layouts/header' %>
         <% flash.each do |message_type, message| %>
             <%= content_tag(:div, class: "alert alert-#{message_type} alert-dismissible fade show text-center") do %>
                 <%= message %>
@@ -19,7 +19,7 @@
             <% end %>
         <% end %>
         <%= yield %>
-        <%= render 'layouts/footer.html.erb' %>
+        <%= render 'layouts/footer' %>
         <%= javascript_pack_tag 'custom', 'data-turbolinks-track': 'reload' %>
     </body>
 </html>
